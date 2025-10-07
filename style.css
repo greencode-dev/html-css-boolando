@@ -1,6 +1,139 @@
+/* CSS GENERAL UTILITIES - START */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+}
+
+/* CSS GENERAL UTILITIES - END */
+
+/* CSS LAYOUT UTILITIES - START */
+.container-fluid {
+  width: 100%;
+}
+
+.container-boxed {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column-25 {
+  width: 70%;
+}
+
+.column-50 {
+  width: 30%;
+}
+
+.flex-align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.image-fluid {
+  width: 100%;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+/* CSS LAYOUT UTILITIES - END */
+
+/* SPECIFIC PAGE ELEMENTS - START */
+header {
+  background-color: orange;
+  color: white;
+}
+
+#header-row {
+  padding: 0.75em 0;
+}
+
+main {
+  padding: 3em 0;
+}
+
+.card-spacer {
+  /* questo contenitore mi crea lo spazio in cui contenere la card
+    invece di usarlo subito, lascio del padding, per creare lo spazio tra le card
+    la card vera e propria è all'interno (.card) */
+  /* nota: come posso evitare questo contenitore usando gap sulla row? */
+  width: 33%;
+  padding: 0.5em;
+}
+
+.card {
+  background-color: white;
+  position: relative;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.brand-name {
+  font-size: 12px;
+}
+
+.product-name {
+  font-size: 15px;
+}
+
+.price-nodiscount {
+  font-size: 12px;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.price-discount {
+  font-size: 12px;
+  color: crimson;
+}
+
+.label {
+  position: absolute;
+  top: 1em;
+  right: 0px;
+  background: gray;
+  color: white;
+  padding: 0.25em 0.5em 0.25em 0.75em;
+}
+
+.label-discount {
+  background: crimson;
+}
+
+.label-end {
+  background: green;
+}
+/* SPECIFIC PAGE ELEMENTS - END */
+
+/* BONUS EXAMPLE HOVER */
+.padre {
+  background: crimson;
+  padding: 1em;
+}
+
+/* quando c'è hover sul padre, lo modifico */
+.padre:hover {
+  background: orange;
+}
+
+/* quando c'è hover sul padre, modifico un altro elemento (deve essere al suo interno!) */
+.padre:hover .figlio {
+  color: white;
 }

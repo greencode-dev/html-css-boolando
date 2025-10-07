@@ -3,7 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- Header boxato, senza nessuna altezza dichiarata, centrato verticalmente -->
+    <header>
+      <div class="container-boxed">
+        <div class="row flex-align-center" id="header-row">
+          <div class="column-25 text-left">LINK</div>
+          <div class="column-50">
+            <img class="image-fluid" src="img/boolean-logo.png" alt="boolean-logo" />
+          </div>
+          <div class="column-25 text-right">LINK</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Card 1 -->
+      <div class="container-boxed">
+        <div class="row flex-wrap">
+          <!-- Ogni card ha un'immagine che prende il 100% della larghezza -->
+          <!-- .card-spacer serve a dividere gli spazi (v. css rigo 67) -->
+          <!-- Allineo l'etichetta al contenitore .card -->
+          <div class="card-spacer">
+            <div class="card">
+              <img src="./img/1.webp" alt="" />
+              <span class="label label-discount">50%</span>
+              <p class="brand-name">Levi's</p>
+              <p class="product-name">RELAXED FIT TEE UNISEX</p>
+              <span class="price-discount">12,99 €</span>
+              <span class="price-nodiscount">12,99 €</span>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="card-spacer">
+            <div class="card">
+              <img src="./img/2.webp" alt="" />
+              <span class="label label-discount">30%</span>
+              <h2>Nome prodotto</h2>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="card-spacer">
+            <div class="card">
+              <img src="./img/3.webp" alt="" />
+              <span class="label label-discount">30%</span>
+              <h2>Nome prodotto</h2>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="card-spacer">
+            <div class="card">
+              <img src="./img/4.webp" alt="" />
+              <span class="label label-discount">50%</span>
+              <h2>Nome prodotto</h2>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="card-spacer">
+            <div class="card">
+              <img src="./img/5.webp" alt="" />
+              <h2>Nome prodotto</h2>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="card-spacer">
+            <div class="card">
+              <img src="./img/6.webp" alt="" />
+              <span class="label label-end">fine serie!</span>
+              <h2>Nome prodotto</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="padre">
+        <div class="figlio">contenuto alterato</div>
+      </div>
+
+      <div class="figlio">contenuto non alterato</div>
+    </footer>
+  </body>
 </html>
