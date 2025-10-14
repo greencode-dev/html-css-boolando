@@ -4,87 +4,74 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
 }
 
 /* CSS GENERAL UTILITIES - END */
 
 /* CSS LAYOUT UTILITIES - START */
-.container-fluid {
-  width: 100%;
+
+header {
+  background-color: darkorange;
+  color: white;
 }
 
-.container-boxed {
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.column-25 {
-  width: 70%;
-}
-
-.column-50 {
-  width: 30%;
-}
-
-.flex-align-center {
+.header-container {
+  justify-content: space-between;
   align-items: center;
+  padding: 0.5em 0;
 }
 
-.flex-wrap {
+.header-col-logo img {
+  width: 12rem;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+.main-container {
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-.image-fluid {
+.card {
+  width: calc((100% - 2rem) / 3);
+  background: pink;
+}
+
+.card-inner-top {
+  position: relative;
+}
+
+.card-image {
   width: 100%;
+  display: block;
 }
 
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
+.badge {
+  background-color: red;
+  padding: 6px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
 }
 /* CSS LAYOUT UTILITIES - END */
 
 /* SPECIFIC PAGE ELEMENTS - START */
-header {
-  background-color: orange;
-  color: white;
-}
-
-#header-row {
-  padding: 0.75em 0;
-}
-
-main {
-  padding: 3em 0;
-}
-
-.card-spacer {
-  /* questo contenitore mi crea lo spazio in cui contenere la card
-    invece di usarlo subito, lascio del padding, per creare lo spazio tra le card
-    la card vera e propria è all'interno (.card) */
-  /* nota: come posso evitare questo contenitore usando gap sulla row? */
-  width: 33%;
-  padding: 0.5em;
-}
-
-.card {
-  background-color: white;
-  position: relative;
-}
-
-.card > img {
-  width: 100%;
-}
-
 .brand-name {
   font-size: 12px;
 }
