@@ -119,3 +119,61 @@ main {
 }
 
 /* SPECIFIC PAGE ELEMENTS - END */
+
+/* BONUS EXAMPLE HOVER */
+
+/* footer layout like the screenshot */
+footer {
+  background: #111;
+  color: white;
+  margin-top: 3rem;
+  padding: 1.1rem 0;
+}
+
+.footer-inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.legal {
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.sep {
+  margin: 0 0.25rem;
+}
+
+.social-title {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.si {
+  margin-left: 0.5rem;
+  justify-items: center;
+}
+
+.social-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 0.9rem;
+}
+
+.social-icons:hover {
+  background: rgba(255, 255, 255, 0.06);
+  justify-content: center;
+}
